@@ -9,4 +9,8 @@ public class MathUtils {
     public static int mul(int i, int i1) {
         return i * i1;
     }
+
+    public static int divide(int i, int i1) {
+        return i / i1;
+    }
 }

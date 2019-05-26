@@ -17,4 +17,12 @@ class MathUtilsTest {
         int res = MathUtils.mul(3, 3);
         Assertions.assertEquals(9, res);
     }
+
+    @Test
+    void shouldThrowDividingByZero() {
+        Assertions.assertThrows(
+                ArithmeticException.class,
+                () -> MathUtils.divide(1, 0)
+        );
+    }
 }
